@@ -17,10 +17,12 @@ export interface Store {
 export const StoreContext = React.createContext(null)
 
 export default ({ children }) => {
-  let [users, setUsers] = React.useState(new Array<User>())
+  let [users, setUsers] = React.useState([])
 
   React.useEffect(() => {
-    setUsers(API.getUsers())
+    API.getUsers().then(response => {
+      setUsers(response.data)
+    })
   }, [])
 
   function addUser(user: User) {
