@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "id": 0,
+            "name": "John Kowalski",
+            "username": "john24",
+            "city": "Boston",
+            "email": "dummy@example.com"
+        },
+        {
+            "id": 1,
+            "name": "Walt Nowak",
+            "username": "walt11",
+            "city": "London",
+            "email": "walt11@example.com"
+        }
+    ]
+}
