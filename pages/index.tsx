@@ -20,7 +20,7 @@ export default function Home() {
       <Tbody>
         {store.users.value.map((user) => (
           <UserRow {...user} />
-        ))}
+        )) || 'No records'}
       </Tbody>
       <Tfoot>
         <UsersTableHead />
