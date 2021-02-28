@@ -1,9 +1,7 @@
 import {
     Tr,
-    Thead,
     Th
 } from "@chakra-ui/react"
-import User from "../types/user"
 
 export default function UsersTableHead() {
     return (
