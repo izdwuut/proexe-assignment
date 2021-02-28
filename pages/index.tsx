@@ -3,6 +3,8 @@ import {
   Thead,
   Tbody,
   Tfoot,
+  Td,
+  Tr
 } from "@chakra-ui/react"
 import React from 'react'
 import { Store, StoreContext } from '../utils/store'
@@ -18,9 +20,13 @@ export default function Home() {
         <UsersTableHead />
       </Thead>
       <Tbody>
-        {store.users.value.map((user) => (
-          <UserRow {...user} />
-        )) || 'No records'}
+        {store.users.value.length > 0 ?
+          store.users.value.map((user) => (
+            <UserRow {...user} />
+          )) :
+          <Tr>
+            <Td>No records</Td>
+          </Tr>}
       </Tbody>
       <Tfoot>
         <UsersTableHead />
