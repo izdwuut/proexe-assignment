@@ -1,0 +1,1 @@
+export const apiBaseUrl =  'http://my-json-server.typicode.com/izdwuut/proexe-assignment/'
