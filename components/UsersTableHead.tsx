@@ -11,6 +11,8 @@ export default function UsersTableHead() {
             <Th>Username</Th>
             <Th>Email</Th>
             <Th>City</Th>
+            <Th>Update</Th>
+            <Th>Delete</Th>
         </Tr>
     )
 }
